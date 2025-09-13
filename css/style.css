@@ -11,7 +11,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
-  margin: 0; /* DEĞİŞTİRİLDİ → varsayılan margin kaldırıldı */
+  margin: 0;
 }
 
 .container {
@@ -37,37 +37,37 @@ ul {
 h1 {
   color: white;
   font-weight: 700;
-  font-size: 32px; /* DEĞİŞTİRİLDİ → mobil için küçültüldü */
+  font-size: 32px;
   letter-spacing: 1px;
-  line-height: 40px; /* DEĞİŞTİRİLDİ */
+  line-height: 40px;
 }
 
 h2 {
   font-weight: 700;
-  font-size: 28px; /* DEĞİŞTİRİLDİ */
+  font-size: 28px;
   letter-spacing: 1px;
-  margin-bottom: 32px; /* DEĞİŞTİRİLDİ → spacing ekledim */
-  text-align: center; /* DEĞİŞTİRİLDİ */
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 h3 {
   font-weight: 500;
-  font-size: 18px; /* DEĞİŞTİRİLDİ */
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
 /* NAV */
 .header-container {
   display: flex;
-  justify-content: space-between; /* DEĞİŞTİRİLDİ */
+  justify-content: space-between;
   align-items: center;
-  padding: 0 16px; /* DEĞİŞTİRİLDİ */
-  gap: 12px; /* DEĞİŞTİRİLDİ */
+  padding: 0 16px;
+  gap: 12px;
   width: 100%;
 }
 
 header {
-  height: 60px; /* DEĞİŞTİRİLDİ */
+  height: 60px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid #e7e9fc;
 }
@@ -98,7 +98,7 @@ header {
 }
 
 .section {
-  padding: 60px 0; /* DEĞİŞTİRİLDİ → mobil için küçültüldü */
+  padding: 60px 0;
 }
 
 /* HERO */
@@ -109,10 +109,10 @@ header {
   justify-content: center;
   padding: 60px 16px; /* mobil */
   gap: 20px;
-  min-height: 480px; /* DEĞİŞTİRİLDİ */
+  min-height: 480px;
   background-size: cover;
   background-position: center;
-  max-width: 100%; /* DEĞİŞTİRİLDİ */
+  max-width: 100%;
   margin: 0 auto;
 
   background-color: #2e2f42;
@@ -121,7 +121,10 @@ header {
       rgba(46, 47, 66, 0.8),
       rgba(46, 47, 66, 0.8)
     ),
-    url("../images/people-office 1.jpg");
+    image-set(
+      url("../images/people-office-1x.jpg") 1x,
+      url("../images/people-office-2x.jpg") 2x
+    );
   background-repeat: no-repeat;
 }
 
@@ -244,9 +247,9 @@ button:hover {
 
 .section-one .section-list {
   display: flex;
-  flex-direction: column; /* DEĞİŞTİRİLDİ */
+  flex-direction: column;
   justify-content: center;
-  gap: 72px; /* DEĞİŞTİRİLDİ */
+  gap: 72px;
   align-items: center;
   padding: 0 5px;
 }
@@ -310,8 +313,8 @@ section {
 }
 
 .section-one .icon-div {
-  padding: 16px; /* DEĞİŞTİRİLDİ */
-  margin-bottom: 12px; /* DEĞİŞTİRİLDİ */
+  padding: 16px;
+  margin-bottom: 12px;
   display: none;
   justify-content: center;
   align-items: center;
@@ -342,10 +345,10 @@ section {
   box-sizing: border-box;
   background-color: #ffffff;
   text-align: center;
-  width: 100%; /* DEĞİŞTİRİLDİ */
-  max-width: 264px; /* DEĞİŞTİRİLDİ */
-  margin: 0 auto; /* DEĞİŞTİRİLDİ */
-  padding-bottom: 24px; /* DEĞİŞTİRİLDİ */
+  width: 100%;
+  max-width: 264px;
+  margin: 0 auto;
+  padding-bottom: 24px;
   border-radius: 4px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.16),
     0px 1px 6px rgba(0, 0, 0, 0.08);
@@ -499,7 +502,7 @@ section {
 /* FOOTER */
 footer {
   background-color: #2e2f42;
-  padding: 96px 0; /* DEĞİŞTİRİLDİ */
+  padding: 96px 0;
 }
 
 .footer-container {
@@ -739,10 +742,10 @@ footer {
   justify-content: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background-color 250ms;
-  padding: 0; /* ÖNEMLİ: padding varsa elips olur */
+  padding: 0;
   margin: 0;
-  line-height: 0; /* ÖNEMLİ: metin yüksekliği taşmasını engeller */
-  font-size: 0; /* ÖNEMLİ: varsa metin karakterleri yüksekliğe neden olmasın */
+  line-height: 0;
+  font-size: 0;
   overflow: hidden;
   box-sizing: content-box;
 }
@@ -876,7 +879,7 @@ footer {
   width: 16px;
   height: 16px;
   cursor: pointer;
-  accent-color: #404bbf; /* modern tarayıcılarda tik rengi */
+  accent-color: #404bbf;
 }
 
 .checkbox-container > p {
@@ -928,7 +931,7 @@ footer {
   justify-content: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background-color 250ms;
-  padding: 0; /* ÖNEMLİ: padding varsa elips olur */
+  padding: 0;
   margin: 0;
   line-height: 0; /* ÖNEMLİ: metin yüksekliği taşmasını engeller */
   font-size: 0; /* ÖNEMLİ: varsa metin karakterleri yüksekliğe neden olmasın */
@@ -1399,7 +1402,7 @@ address.address-block {
   .hero-title {
     font-size: 56px;
     line-height: 1.2;
-    margin-bottom: 24px; /* CTA ile boşluk */
+    margin-bottom: 24px;
   }
 
   .section-one .feature-list {
